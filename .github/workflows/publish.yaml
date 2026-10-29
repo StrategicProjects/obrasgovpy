@@ -59,6 +59,7 @@ jobs:
       - uses: pypa/gh-action-pypi-publish@release/v1
         with:
           repository-url: https://test.pypi.org/legacy/
+          skip-existing: true
 
   pypi:
     needs: build
@@ -74,4 +75,8 @@ jobs:
         with:
           name: dist
           path: dist/
+      # skip-existing lets a release-triggered run succeed as a no-op when the
+      # version was already uploaded by a manual dispatch.
       - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          skip-existing: true
