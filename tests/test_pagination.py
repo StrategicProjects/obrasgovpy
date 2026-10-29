@@ -106,6 +106,16 @@ def test_a_missing_total_is_an_error_not_a_truncation(mock):
         og.get_projects()
 
 
+def test_a_missing_total_is_an_error_even_with_an_empty_payload(mock):
+    # With no records the consistency check has nothing to contradict, so the
+    # total's own validation is the only thing standing between a missing
+    # total and an empty frame presented as a legitimate empty result.
+    add_page(mock, '{"data":[],"total_items":0,"page_number":1,"page_size":50}')
+
+    with pytest.raises(ResponseError, match="no usable total_pages"):
+        og.get_projects()
+
+
 def test_a_fractional_total_is_rejected(mock):
     body = page_body(1).replace('"total_pages":1', '"total_pages":1.5')
     add_page(mock, body)
