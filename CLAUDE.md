@@ -4,6 +4,10 @@ Python client for the ObrasGov open data API at
 `https://api-publica.obrasgov.gestao.gov.br/obras`. The sibling of
 `../obrasgovr`, which covers the same ground in R (on CRAN since 2026-07-24).
 
+**Published:** PyPI `obrasgovpy` **0.1.0** (released 2026-10-29, GitHub
+release v0.1.0), archived on Zenodo under concept DOI
+`10.5281/zenodo.23750687`.
+
 ## Keep the two packages in step
 
 Both freeze the same OpenAPI contract: 8 resources, the same filter names and

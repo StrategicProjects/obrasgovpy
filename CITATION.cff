@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "obrasgovpy: Access the Brazilian federal government's ObrasGov open data API from Python"
+abstract: >-
+  A Python client for the open data API of ObrasGov.br, the Brazilian federal
+  government's platform for public infrastructure projects: projects, physical
+  execution, contracts, budget commitments, geometries, feasibility studies
+  and project status histories. Returns pandas DataFrames with typed date
+  columns and nested relationships preserved, with defensive pagination,
+  throttling and retries. Python sibling of the R package obrasgovr.
+type: software
+version: 0.1.0
+license: MIT
+doi: "10.5281/zenodo.23750687"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23750687"
+    description: The concept DOI, which always resolves to the latest version.
+  - type: doi
+    value: "10.5281/zenodo.23750688"
+    description: The DOI of version 0.1.0.
+repository-code: "https://github.com/StrategicProjects/obrasgovpy"
+url: "https://github.com/StrategicProjects/obrasgovpy"
+keywords:
+  - ObrasGov
+  - Brazil
+  - infrastructure
+  - public works
+  - open data
+authors:
+  - family-names: Leite
+    given-names: André
+    email: leite@castlab.org
+    orcid: "https://orcid.org/0000-0002-4718-9766"
+  - family-names: Wasiliew
+    given-names: Marcos
+    email: marcos.wasiliew@gmail.com
+    orcid: "https://orcid.org/0009-0004-4694-3159"
+  - family-names: Vasconcelos
+    given-names: Hugo
+    email: hugo.vasconcelos@ufpe.br
+    orcid: "https://orcid.org/0000-0001-6249-0920"
+  - family-names: Amorim
+    given-names: Carlos
+    email: carlos.agaf@ufpe.br
+    orcid: "https://orcid.org/0000-0001-6315-8305"
+  - family-names: Bezerra
+    given-names: Diogo
+    email: diogo.bezerra@ufpe.br
+    orcid: "https://orcid.org/0000-0002-1216-8674"
+  - family-names: Nascimento Barreto
+    given-names: Júlia
+    email: juliabarreto@gd.seplag.pe.gov.br
+    orcid: "https://orcid.org/0009-0004-2851-7770"

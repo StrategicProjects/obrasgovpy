@@ -3,6 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/obrasgovpy.svg)](https://pypi.org/project/obrasgovpy/)
 [![Python](https://img.shields.io/pypi/pyversions/obrasgovpy.svg)](https://pypi.org/project/obrasgovpy/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23750687.svg)](https://doi.org/10.5281/zenodo.23750687)
 
 Access the open data API of **ObrasGov.br**, the Brazilian federal
 government's platform for public infrastructure projects, from Python.
